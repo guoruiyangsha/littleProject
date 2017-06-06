@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/project/caseExperience/caseExperience",
+    "pages/project/contractSample/contractSample",
+    "pages/project/projectProgress/projectProgress",
+    "pages/project/projectIdeas/projectIdeas",
+    "pages/project/costToDeclare/costToDeclare",
+    "pages/project/moneyIncome/moneyIncome",
+    "pages/project/taskAllocation/taskAllocation",
+    "pages/project/publicFund/publicFund",
+    "pages/project/personalCenter/personalCenter",
+    "pages/project/login/login",
+    "pages/project/map/map",
+    "pages/project/TaskList/TaskList",
+    "pages/project/api/api",
+    "pages/project/regedit/regedit"
+
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "互微OA系统",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":"true"
+  },
+    "tabBar": {
+      "selectedColor": "#1AAD19",
+      "borderStyle": "white",
+      "backgroundColor": "#ffffff",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "主菜单",
+          "iconPath": "images/icon_component.png",
+          "selectedIconPath": "images/icon_component_HL.png"
+        },
+        {
+          "pagePath": "pages/project/login/login",
+          "text": "我的",
+          "iconPath": "images/icon_my.png",
+          "selectedIconPath": "images/icon_my_HL.png"
+        }
+      ]
+    }
+}

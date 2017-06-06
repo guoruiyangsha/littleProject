@@ -1,0 +1,24 @@
+/* pages/project/personalCenter/personalCenter.wxss */
+.CenterButton{
+  width: 302rpx;
+  float:left;
+  margin: 10px;
+}
+.note{
+  width: 500px;
+  display: inline-block;
+  margin-left: 150px;
+}
+.save{
+  text-align: center;
+  width: 200px;
+}
+.textarea{
+  border-bottom-style:solid;
+  border-bottom-width: 1px;
+  border-bottom-color:#00ff00;
+
+  border-top-style:solid;
+  border-top-width: 1px;
+  border-top-color:#00ff00;
+}

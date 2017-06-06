@@ -1,0 +1,6 @@
+<!--pages/project/moneyIncome/moneyIncome.wxml-->
+<view class="captionheader">
+  <view  class="userinfo">
+    <text>资金收入</text>
+  </view>
+</view>

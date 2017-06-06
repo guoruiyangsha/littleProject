@@ -1,0 +1,14 @@
+/* pages/project/taskAllocation/taskAllocation.wxss */
+.captionheader{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50rpx 0;
+  box-sizing: border-box;
+
+}
+.buttonsize{
+  width: 300px;
+}

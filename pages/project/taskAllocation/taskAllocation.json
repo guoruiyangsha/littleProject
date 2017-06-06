@@ -1,0 +1,22 @@
+{
+  "navigationBarTitleText": "互微OA系统--任务分配",
+  "tabBar": {
+    "selectedColor": "#1AAD19",
+    "borderStyle": "white",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主菜单",
+        "iconPath": "images/icon_component.png",
+        "selectedIconPath": "images/icon_component_HL.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "我的",
+        "iconPath": "images/icon_my.png",
+        "selectedIconPath": "images/icon_my_HL.png"
+      }
+    ]
+  }
+}

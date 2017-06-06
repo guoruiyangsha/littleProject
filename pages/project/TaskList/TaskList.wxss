@@ -1,0 +1,13 @@
+.line{
+  float: left;
+  width: 100%;
+  /*改变了左内边框,以便跟屏幕有一个的间距*/
+  padding-left: 25px;
+  padding-top: 20px;
+  padding-right: 13px;
+  border-bottom-style:solid;
+  border-bottom-width: 1px;
+  border-bottom-color:#f0f0f0;
+  color: #9932CC;
+
+}

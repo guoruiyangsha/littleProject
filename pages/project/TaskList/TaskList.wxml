@@ -1,0 +1,12 @@
+  <view wx:for="{{zhihu}}"> 
+    <view class="classname">项目名称：{{item.projectName}}</view>
+    <view class="classname">负责人：{{item.head}}</view>
+    <view class="classname">项目类型：{{item.projectType}}</view>
+    <view class="classname">预计完成日期：{{item.planfinishedDate}}</view>
+
+    <view class="classname">总金额：{{item.totalAmount}}</view>
+    <view class="classname">实收金额：{{item.incomeAmount}}</view>
+    <view class="classname">应收金额：{{item.remainingAmount}}</view>
+    <view class="classname">编辑日期：{{item.createdate}}</view>
+    <view class="line">编辑</view>
+  </view>

@@ -1,0 +1,6 @@
+<!--pages/project/caseExperience/caseExperience.wxml-->
+<view class="captionheader">
+  <view  class="userinfo">
+    <text>案例体验</text>
+  </view>
+</view>

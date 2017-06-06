@@ -1,0 +1,6 @@
+<!--pages/project/projectIdeas/projectIdeas.wxml-->
+<view class="captionheader">
+  <view  class="userinfo">
+    <text>项目意见</text>
+  </view>
+</view>

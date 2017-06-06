@@ -1,0 +1,97 @@
+<!--index.wxml-->
+<!--整体背景的背景图片为homwi的logo-->
+<!--<view class="bglogo">-->
+  <!--幻灯片区域-->
+  <view class="pic">
+
+    <swiper  class="swiper_box" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+          <block wx:for="{{goodsPicsInfo}}">
+              <swiper-item>
+                  <image src="{{item}}" class="slide-image" bindtap="map"/>
+              </swiper-item>
+          </block>
+    </swiper>
+  </view>
+
+<!--开始菜单展示-->
+  <!--样式二：一个块代表一个菜单的范围 示例布局-->
+  <view class="menu-whole">
+  <!--第一行-->
+  <view style="padding-bottom:20px">
+    <view class="viewTag" bindtap="caseExperience">
+      <image src="../../images/caseExperience.png"></image>
+        <text style="line-height:-10px">{{menu1}}\n</text>
+        <text style="font-size:10px;color:#999999">通过扫描二维码体验</text>
+    </view>
+
+    <view class="viewTagright" bindtap="contractSample">
+      <image src="../../images/contractSample.png"></image>
+      <text>{{menu2}}\n</text>
+      <text style="font-size:10px;color:#999999">通用、服务、工业样本</text>
+    </view>
+  </view>
+     <!--第二行-->
+ <view class="viewTagRowSpace"></view>
+  <view class="viewTagRow" style="padding-bottom:20px">
+  <view class="viewTag" bindtap="projectProgress">
+    <image src="../../images/projectProgress.png"></image>
+      <text style="line-height:-10px">{{menu3}}\n</text>
+      <text style="font-size:10px;color:#999999">了解项目进展情况</text>
+  </view>
+  <view class="viewTagright" bindtap="projectIdeas">
+    <image src="../../images/projectIdeas.png"></image>
+    <text>{{menu4}}\n</text> <!--终于会在子页面中调用app级别的全局字符串了-->
+    <text style="font-size:10px;color:#999999">初级阶段意见反馈</text>
+  </view>
+  </view>
+    <!--第三行-->
+    <view class="viewTagRowSpace"></view>
+  <view class="viewTagRow" style="padding-bottom:20px">
+  <view class="viewTag" bindtap="costToDeclare">
+    <image src="../../images/costToDeclare.png"></image>
+      <text style="line-height:-10px">费用申报\n</text>
+      <text style="font-size:10px;color:#999999">员工费用报销入口</text>
+  </view>
+  <view class="viewTagright" bindtap="moneyIncome">
+    <image src="../../images/moneyIncome.png"></image>
+    <text>资金收入\n</text>
+    <text style="font-size:10px;color:#999999">企业资金进账情况</text>
+  </view>
+  </view>
+    <!--第四行-->
+  <view class="viewTagLast" bindtap="taskAllocation">
+    <image src="../../images/taskAllocation.png"></image>
+      <text style="line-height:-10px">任务分配\n</text>
+      <text style="font-size:10px;color:#999999">员工任务责任认领</text>
+  </view>
+  <view class="viewTagrightLast" bindtap="publicFund">
+    <image src="../../images/publicFund.png"></image>
+    <view class="classname">
+    <text class="aligntext">公共基金\n</text>
+    <text style="font-size:10px;color:#999999">企业公共基金明细</text>
+    </view>
+  </view>
+
+ 
+</view>
+<!--菜单与公告栏之间的图片-->
+<!--<view class="picmiddle">
+<image src="../../images/111.jpg"></image>
+</view>-->
+  <!--公告布局-->
+  <view class="gonggao">
+    <view class="gonggaoItem">
+      <text>【1】 8月10日前完成黄河项目</text>
+    </view>
+    <view class="gonggaoItem">
+      <text>【2】 完成与107电台的合作</text>
+    </view>
+    <view class="gonggaoItem">
+      <text>【3】 智奇铁路的二次合作</text>
+    </view>
+    <view class="gonggaoItem">
+      <text>【4】 互微学院第三期总结</text>
+    </view>
+  </view>
+
+<!--</view>-->

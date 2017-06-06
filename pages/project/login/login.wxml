@@ -1,0 +1,13 @@
+
+<form bindsubmit="formSubmit">
+用户名：<input type="text" name="uid" placeholder="请输入用户名"/>
+密码：<input type="password" name="pwd" placeholder="请输入密码"/>
+<button form-type="submit" type="primary">登录</button>
+
+</form>
+<view class="qita">
+<view class="forgotpwd" bindtap="forgotpwd">忘记密码</view>
+<view class="regedit" bindtap="regedit">立即注册</view>
+</view>
+
+

@@ -1,0 +1,18 @@
+
+  <view>
+    <button class="CenterButton"  type="primary" disabled="{{disabled1}}" bindtap="wxscanCode">wx.scanCode</button>
+    <button class="CenterButton" type="primary" disabled="{{disabled2}}" bindtap="wxmakePhoneCall">wx.makePhoneCall</button>
+    <button class="CenterButton"  type="primary" disabled="{{disabled1}}" bindtap="wxgetSystemInfo">wx.getSystemInfo</button>
+    <button class="CenterButton"  type="primary" disabled="{{disabled1}}" bindtap="wxonNetworkStatusChange">wx.onNetworkStatusChange</button>
+    <button class="CenterButton"  type="primary" disabled="{{disabled2}}" bindtap="wxshowLoading">wx.showLoading</button>
+    <button class="CenterButton"  type="primary" disabled="{{disabled2}}" bindtap="wxshowModal">wx.showModal</button>
+
+    <button class="CenterButton"  type="primary" disabled="{{disabled1}}" bindtap="wxshowActionSheet">wx.showActionSheet</button>
+    <button class="CenterButton" type="primary" disabled="{{disabled2}}" bindtap="wxsetNavigationBarTitle">wx.setNavigationBarTitle</button>
+    <button class="CenterButton"  type="primary" disabled="{{disabled1}}" bindtap="onPullDownRefresh">下拉刷新</button>
+    <button class="CenterButton"  type="primary" disabled="{{disabled1}}" bindtap="wxonNetworkStatusChange">wx.onNetworkStatusChange</button>
+    <button class="CenterButton"  type="primary" disabled="{{disabled2}}" bindtap="wxshowLoading">wx.showLoading</button>
+    <button class="CenterButton"  type="primary" disabled="{{disabled2}}" bindtap="wxshowModal">wx.showModal</button>
+  </view>
+
+<!--<button bindtap="payment">付款</button>-->

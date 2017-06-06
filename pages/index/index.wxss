@@ -1,0 +1,148 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+/*以下引用自组件演示中的animation页面的样式进行 一行放两个按钮效果的 设定宽度即可*/
+.menu-whole {
+  width: 100%;
+  height: 550rpx;  /*height: 518rpx;  */
+  box-sizing: border-box; /*box-sizing：content-box | border-box*/
+  /*background-color: #f0f0f0;*/
+  padding-bottom: 20px;
+}
+/*菜单样式设置*/
+.viewTag {
+  float: left;
+  width: 300rpx;
+  /*改变了左内边框,以便跟屏幕有一个的间距*/
+  padding-left: 25px;
+  padding-top: 20px;
+  padding-right: 13px;
+  border-bottom-style:solid;
+  border-bottom-width: 1px;
+  border-bottom-color:#f0f0f0;
+  border-right-style:solid;
+  border-right-width: 1px;
+  border-right-color:#f0f0f0;
+
+}
+.viewTagright {
+  float: left;
+  width: 300rpx;
+  padding-left: 30px;
+  padding-top: 20px;
+  border-bottom-style:solid;
+  border-bottom-width: 1px;
+  border-bottom-color:#f0f0f0;
+}
+
+.viewTag image{
+  width: 25px;
+  height: 25px;
+  padding-right: 10px;
+  padding-top: 8rpx;
+  float: left;
+}
+.viewTagright image{
+  width: 25px;
+  height: 25px;
+  padding-right: 10px;
+  padding-top: 8rpx;
+
+  float: left;
+}
+.viewTag text{
+  width: 120px;
+  height: 54px;
+  margin: 15rpx 15rpx;
+  font-size: 16px;
+  align-items: center;
+}
+
+.aligntext{
+  align-items: center;
+}
+.gonggao {
+  display: block;
+  width: 100%;
+  /*整个公告栏的高度 跟整个页面高度的改变而改变*/
+  height: 100px;
+  padding-top: 5rpx;
+  padding-bottom: 5px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  align-content: center;
+  align-items: center;
+  line-height: 20px;
+}
+.gonggao .gonggaoItem{
+padding-top: 10rpx;
+padding-left: 18px;
+font-family: 黑体;
+
+}
+/*轮播图样式*/
+.swiper_box {
+    width: 100%;
+}
+.swiper_box .slide-image{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
+.picmiddle{
+  position: absolute;
+  left: 0px;
+  top:860rpx;
+}
+.viewTagLast {
+  float: left;
+  width: 300rpx;
+  /*改变了左内边框,以便跟屏幕有一个的间距*/
+  padding-left: 25px;
+  padding-top: 20px;
+  padding-right: 13px;
+
+  border-right-style:solid;
+  border-right-width: 1px;
+  border-right-color:#f0f0f0;
+
+}
+.viewTagrightLast {
+  float: left;
+  width: 300rpx;
+  padding-left: 30px;
+  padding-top: 20px;
+
+}
+.viewTagLast image{
+  width: 25px;
+  height: 25px;
+   padding-right: 10px;
+  padding-top: 8rpx;
+  float: left;
+}
+.viewTagrightLast image{
+  width: 25px;
+  height: 25px;
+  padding-right: 10px;
+  padding-top: 8rpx;
+  float: left;
+}
+.viewTagLast text{
+  width: 120px;
+  height: 54px;
+  margin: 15rpx 15rpx;
+  font-size: 16px;
+  align-items: center;
+}

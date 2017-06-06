@@ -1,0 +1,6 @@
+<!--pages/project/contractSample/contractSample.wxml-->
+<view class="captionheader">
+  <view  class="userinfo">
+    <text>合同样本</text>
+  </view>
+</view>

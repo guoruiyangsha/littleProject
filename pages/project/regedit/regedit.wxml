@@ -1,0 +1,14 @@
+
+<form bindsubmit="formSubmit">
+用户名：<input type="text" name="uid" placeholder="请输入用户名"/>
+密码：<input type="password" name="pwd" placeholder="请输入密码"/>
+确认密码：<input type="password" name="pwdagain" placeholder="请再次输入密码"/>
+手机号码：<input type="number" name="phone" placeholder="请输入手机号码"/>
+验证码：<input type="text" name="Verification" placeholder="请输入验证码"/>
+<button bindtap="Verification" type="primary">获取验证码</button>
+<button form-type="submit" type="primary">注册</button>
+
+</form>
+
+
+

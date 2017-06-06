@@ -1,0 +1,12 @@
+.forgotpwd{
+  float: left;
+  width: 200px;
+}
+.regedit{
+  float: left;
+  width: 200px;
+  color: #9932CC;
+}
+.qita{
+  float: left;
+}

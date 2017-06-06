@@ -1,0 +1,41 @@
+<!--pages/project/publicFund/publicFund.wxml-->
+<view class="captionheader">
+  <view  class="userinfo">
+    <text>公基金</text>
+    <!--可以调用同名js文件中data中的数据，但无法调用app.js中的数据-->
+    <!--数据绑定 WXML 中的动态数据均来自对应 Page 的 data-->
+    <!--关键字(需要在双引号之内) <checkbox checked="{{false}}"> </checkbox>-->
+    <text>{{data1}}</text> 
+    <!--公有函数脚本-->
+    <button bindtap="helloMINA">common.js函数调用</button>
+    <button bindtap="showMessage">调用显示消息</button>
+    <button bindtap="xhr">获取服务器数据</button>
+  </view>
+  <!--列表渲染 数组当前项的变量名默认为item-->
+  <!--<view wx:for="{{array}}"> {{item}} </view>-->
+  <!--<view wx:for="{{zhihu}}"> {{item.username}} </view>-->
+  <!--条件渲染-->
+  <view wx:if="{{view == 'WEBVIEW'}}"> WEBVIEW </view>
+  <view wx:elif="{{view == 'APP'}}"> APP </view>
+  <view wx:else="{{view == 'MINA'}}"> MINA </view>
+  <!--模版 -->
+  <template name="staffName"> <!--定义的模版，有name属性供调用-->
+  <view>
+    FirstName: {{firstName}}, LastName: {{lastName}}
+  </view>
+  
+  </template>
+  
+<!--扩展运算符 ... 来将一个对象展开-->
+<!--使用 is 属性，声明需要的使用的模板，然后将模板所需要的 data 传入-->
+<template is="staffName" data="{{...staffA}}"></template>
+<template is="staffName" data="{{...staffB}}"></template>
+<template is="staffName" data="{{...staffC}}"></template>
+
+<view class="classname">获取并解析服务器的json数据：</view>
+  <view wx:for="{{zhihu}}"> 
+    <view class="classname">用户名：{{item.username}}</view>
+    <view class="classname">密码：{{item.password}}</view>
+    <view class="classname">职位：{{item.type}}</view>
+  </view>
+</view>

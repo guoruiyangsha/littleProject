@@ -1,0 +1,6 @@
+<!--pages/project/costToDeclare/costToDeclare.wxml-->
+<view class="captionheader">
+  <view  class="userinfo">
+    <text>费用申报</text>
+  </view>
+</view>

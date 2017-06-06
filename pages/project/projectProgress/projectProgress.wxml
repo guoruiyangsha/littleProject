@@ -1,0 +1,6 @@
+<!--pages/project/projectProgress/projectProgress.wxml-->
+<view class="captionheader">
+  <view  class="userinfo">
+    <text>项目进度</text>
+  </view>
+</view>

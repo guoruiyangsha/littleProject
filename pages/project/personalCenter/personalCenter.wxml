@@ -1,0 +1,37 @@
+
+<view class="classname">
+<text>登陆用户名：{{title}}</text>
+</view>
+
+  <view wx:for="{{zhihu}}"> 
+    <view class="classname">姓名：{{item.name}}</view>
+    <view class="classname">密码：{{item.password}}</view>
+    <view class="classname">职位：{{item.type}}</view>
+    <view class="classname">权限：{{item.permission}}</view>
+  </view>
+<!--根据权限不同，显示不同的可操作按钮-->
+<view>
+<text>权限操作：{{aa}}</text>
+  <view>
+    <button class="CenterButton"  type="primary" disabled="{{disabled1}}" bindtap="projectProgress">项目进度</button>
+    <button class="CenterButton" type="primary" disabled="{{disabled2}}" bindtap="projectIdeas">项目意见</button>
+    <button class="CenterButton"  type="primary" disabled="{{disabled1}}" bindtap="costToDeclare">费用申报</button>
+    <button class="CenterButton"  type="primary" disabled="{{disabled1}}" bindtap="moneyIncome">资金收入</button>
+    <button class="CenterButton"  type="primary" disabled="{{disabled2}}" bindtap="taskAllocation">任务分配</button>
+    <button class="CenterButton"  type="primary" disabled="{{disabled2}}" bindtap="publicFund">公共基金</button>
+  </view>
+</view>
+<!--如何使得下面的文字不去到上面-->
+<view>
+<text class="note">迷你记事本</text>
+</view>
+<!--表单操作记事本-->
+<form bindsubmit="noteSubmit">
+
+<input type="text" name="{{uid}}" style="display:none"/>
+<textarea placeholder="记事内容" name="noteContent" class="textarea"/>
+<button type="primary" class="save" form-type="submit">保 存</button>
+
+</form>
+
+<!--<button bindtap="payment">付款</button>-->

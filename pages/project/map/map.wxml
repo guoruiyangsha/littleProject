@@ -1,0 +1,33 @@
+<!--获取当前位置-->
+<button bindtap="getlocation" type="primary">获取当前位置</button>
+
+<text style="display:block;">位置的精确度:{{accuracy}}</text>
+<text style="display:block;">垂直精度:{{verticalAccuracy}}</text>
+<text style="display:block;">水平精度:{{horizontalAccuracy}}</text>
+
+<text style="display:block;">纬度:{{latitude}}</text>
+<text style="display:block;">经度:{{accuracy}}</text>
+
+<text style="display:block;">高度:{{altitude}}</text>
+<text style="display:block;">速度:{{speed}}</text>
+<!--选择位置事件-->
+<button bindtap="chooselocation" type="primary">打开地图选择位置</button>
+
+<text style="display:block;">位置名称:{{name}}</text>
+<text style="display:block;">详细地址:{{address}}</text>
+
+<text style="display:block;">纬度:{{latitude}}</text>
+<text style="display:block;">经度:{{accuracy}}</text>
+
+<!--选择位置事件-->
+<button bindtap="setStorage" type="primary">设置缓存中字段信息</button>
+<button bindtap="getStorage" type="primary">获取缓存中字段信息</button>
+<button bindtap="getStorageInfo" type="primary">获取全体缓存信息</button>
+
+<button bindtap="removeStorage" type="primary">移除缓存中字段信息</button>
+<button bindtap="clearStorage" type="primary">清除缓存中所有信息</button>
+<!--获取收货地址-->
+<button bindtap="chooseAddress" type="primary">获取收货地址</button>
+
+
+

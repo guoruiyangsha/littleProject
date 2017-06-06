@@ -1,0 +1,32 @@
+<!--pages/project/taskAllocation/taskAllocation.wxml-->
+<view class="captionheader">
+  <view  class="userinfo">
+    <text>任务分配</text>
+  </view>
+</view>
+    <button class="CenterButton" type="primary" bindtap="projectList"  class="buttonsize">查看任务分配表</button>
+
+  <view  class="userinfo">
+    <text>新增任务分配</text>
+  </view>
+  <form bindsubmit="formSubmit">
+项目名称：<input type="text" name="projectName" placeholder="请输入项目名称"/>
+总金额（元）：<input type="number" name="totalAmount" placeholder="请输入项目总金额"/>
+实收金额（元）：<input type="number" name="incomeAmount" placeholder="请输入入账金额"/>
+应收金额（元）：<input type="number" name="remainingAmount" placeholder="请输入剩余金额"/>
+
+<picker mode="date" bindchange="bindPickerplanfinishedDate" value="{{planfinishedDate}}">
+预计完成日期：{{planfinishedDate}}
+</picker>
+
+<picker bindchange="bindPickerprojectType" value="{{projectType}}" range="{{arraytype}}">
+任务类型：{{arraytype[projectType]}}
+</picker>
+
+<picker bindchange="bindPickerhead" value="{{head}}" range="{{array}}">
+责任人：{{array[head]}}
+</picker>
+
+<button form-type="submit" type="warn" class="buttonsize">确认</button>
+
+</form>
